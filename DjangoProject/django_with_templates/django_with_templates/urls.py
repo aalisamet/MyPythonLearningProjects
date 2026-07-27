@@ -1,5 +1,5 @@
 """
-URL configuration for FirstDjangoProject project.
+URL configuration for django_with_templates project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
@@ -17,8 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path , include
 
-urlpatterns = [
-
-    path ("fapp/", include("first_app.urls")),
-    path('admin/', admin.site.urls),
-]
+urlpatterns = [ path ("", include("template_app.urls")),
+                path('admin/', admin.site.urls),
+                ]
+                                        
